@@ -90,8 +90,7 @@ const App = () => {
                         </ul>
                         <div className="d-flex justify-content-between mt-5">
                                 <span>&nbsp;&nbsp;</span>
-                            
-                               {
+                                                           {
                                 activeAnswer !== false && activeAnswer.isCorrect === true && (
                                     <span className="text-success ml-5">Correct Answer</span>
                                 )
