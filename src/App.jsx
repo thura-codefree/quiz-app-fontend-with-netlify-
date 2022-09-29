@@ -70,7 +70,7 @@ const App = () => {
       };
       return(
     <div className ="container mt-5">
-        <div className="row">
+        <div className="row bg-gray">
             <div className="col-12 col-sm-12 col-md-6 offset-md-3">
                 {/* loader က true ဆိုရင် အောက်က code တွေကို ဆက်ပြီး run ပါမယ် */}
                 {loader && (

@@ -6,7 +6,7 @@ const Summary = ({quizCount, summary , minutes, seconds})=>{
      return (
       
       <div  className="text-center mt-7">
-        
+        <div className="card">
         { quizCount === correct && (
              <>
              <span>Congres ! All Right </span>
@@ -25,7 +25,12 @@ const Summary = ({quizCount, summary , minutes, seconds})=>{
              </>
             )}
     
-            <a href="http://localhost:3000/" className='btn btn-success mt-5'>Try Again</a>
+            <a href="https://thurasimplequiz.netlify.app/" className='btn btn-success mt-5 car'>Try Again</a>
+
+
+        </div>
+        
+        
        
     </div>
     )
