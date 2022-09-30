@@ -12,7 +12,13 @@ code{
     font-weight: 700;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.imgSize{
+    width: 20%;
+    height: 20%;
+ 
 
+    
+}
 .footerText{
    z-index: 100;
    position: fixed;

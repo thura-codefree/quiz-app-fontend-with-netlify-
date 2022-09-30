@@ -32,12 +32,7 @@ const App = () => {
         }
     )
       
-
-
-     
-
-
-      // li နှိပ်လိုက်တာနဲ့ လက်ရှိ အဖြေကို useState ကြေငြာထားတဲ့ activeAnswer ထဲကို map နဲ့ loop ပတ်ထားတဲ့ ans အဖြေတွေကို ထည့်ပေးတယ်
+       // li နှိပ်လိုက်တာနဲ့ လက်ရှိ အဖြေကို useState ကြေငြာထားတဲ့ activeAnswer ထဲကို map နဲ့ loop ပတ်ထားတဲ့ ans အဖြေတွေကို ထည့်ပေးတယ်
       // li tag ထဲမှာ onClick နဲ့ထည့်ရေးတယ်။
       // 
       const renderActiveAnswer = (dbAnswersInMapLoop) =>{
@@ -85,7 +80,7 @@ const App = () => {
                 mongodb ထဲက quiz ဆိုတဲ့ db ရဲ့  length ညီပြီး ငယ်မယ်ဆိုမှ အောက်က code တွေကို run ပါမယ် */}
                 {!loader && quiz.length >= activeQuize + 1 && (
                 <>    
-                        <h3 style={mystyleh3}>Test your Coding Skills</h3>
+                        <h3 style={mystyleh3}>Learn to Code</h3>
                         <h4 style={mystyleh4} className ="mb-3">React Quiz</h4>        
                         <div className="card bg-dark rounded border-white shadow ">
                             <div className="bg-success barWH text-center">
@@ -93,7 +88,7 @@ const App = () => {
                                 <span><i className = "float-left bi bi-record-fill text-dark mr-1 "></i></span>
                                 <span><i className = "float-left bi bi-record-fill text-white mr-1 "></i></span>
                                 <span className="text-dark numOfQus">Question {activeQuize + 1} of {quiz.length}</span>
-                                <span className="text-black float-right mr-2">{minutes<10? "0" + minutes : minutes}:{seconds<10? "0" + seconds : seconds}</span>
+                                <span className="text-black float-right mr-2"> Time {minutes<10? "0" + minutes : minutes}:{seconds<10? "0" + seconds : seconds}</span>
                             </div>
                             <div className="card-body p-3">
                                     {/* next button နှိပ်လိုက်တိုင်းမှ renderNext function ထဲမှာ activeQuize ကို 1 အမြဲတမ်းပေါင်းပေးပြီး
