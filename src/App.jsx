@@ -2,7 +2,7 @@ import  {useState, useEffect} from 'react';
 import useFetch from "./hook/useFetch";
 import PacmanLoader from "react-spinners/PacmanLoader";
 import Summary from "./Summary";
-var timer;
+
 
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
       const [minutes, setMinutes] = useState(0);
       useEffect(()=>{
         if(activeQuize + 1 <= quiz.length ){
-            timer = setInterval(()=>{
+            var timer = setInterval(()=>{
 
                 setSeconds(seconds + 1);
                 

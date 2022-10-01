@@ -8,7 +8,7 @@ const useFetc = () =>{
             const data = res.data;
             setQuiz(data);
             setLoader(false);
-            
+           
         })
     }, []);
     return {loader,quiz}
