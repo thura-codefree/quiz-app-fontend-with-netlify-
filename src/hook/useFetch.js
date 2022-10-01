@@ -4,10 +4,11 @@ const useFetc = () =>{
     const [loader,setLoader] = useState(true);
     const [quiz, setQuiz] = useState([]);
     useEffect(()=>{
-        axios.get("http://localhost:1500/api/quiz").then((res)=>{
-            const data = res.data.data
+        axios.get("https://thuraquizapi.herokuapp.com/api/quiz").then((res)=>{
+            const data = res.data.data;
             setQuiz(data);
             setLoader(false);
+            console.log(data)
         })
     }, []);
     return {loader,quiz}
