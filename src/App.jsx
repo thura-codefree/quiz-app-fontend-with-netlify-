@@ -3,8 +3,6 @@ import useFetch from "./hook/useFetch";
 import PacmanLoader from "react-spinners/PacmanLoader";
 import Summary from "./Summary";
 
-
-
 const App = () => {
      
       const {loader,quiz} = useFetch(); // 
